@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI; // Добавь это, чтобы работать с Image
 
 public class PlayerStealth : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class PlayerStealth : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI stealthText;
+    public Image stealthOverlay; // Ссылка на наше черное изображение
 
     [Header("Visual")]
     public SpriteRenderer spriteRenderer;
@@ -21,31 +23,28 @@ public class PlayerStealth : MonoBehaviour
     void Start()
     {
         stealthText.gameObject.SetActive(false);
+        if (stealthOverlay != null) stealthOverlay.gameObject.SetActive(false); // Прячем в начале
 
         normalColor = spriteRenderer.color;
-
         stealthColor = normalColor;
         stealthColor.a = 0.5f;
     }
 
     void Update()
     {
-        // Включение стелса
         if (Input.GetKeyDown(KeyCode.LeftShift) && !isStealth)
         {
             ActivateStealth();
         }
 
-        // Таймер стелса
         if (isStealth)
         {
             stealthTimer -= Time.deltaTime;
-
             stealthText.text = "Стелс: " + Mathf.Ceil(stealthTimer).ToString();
 
             if (stealthTimer <= 0)
             {
-                EndStealth(true);
+                EndStealth(false);
             }
         }
     }
@@ -54,20 +53,26 @@ public class PlayerStealth : MonoBehaviour
     {
         isStealth = true;
         stealthTimer = stealthDuration;
-
         stealthText.gameObject.SetActive(true);
+        stealthText.color = Color.white;
 
         spriteRenderer.color = stealthColor;
+
+        // Включаем затемнение
+        if (stealthOverlay != null) stealthOverlay.gameObject.SetActive(true);
     }
 
     public void EndStealth(bool detected)
     {
         isStealth = false;
-
         spriteRenderer.color = normalColor;
+
+        // Выключаем затемнение
+        if (stealthOverlay != null) stealthOverlay.gameObject.SetActive(false);
 
         if (detected)
         {
+            stealthText.gameObject.SetActive(true);
             stealthText.text = "ОБНАРУЖЕН";
             stealthText.color = Color.red;
         }
@@ -77,8 +82,5 @@ public class PlayerStealth : MonoBehaviour
         }
     }
 
-    public bool IsStealth()
-    {
-        return isStealth;
-    }
+    public bool IsStealth() => isStealth;
 }

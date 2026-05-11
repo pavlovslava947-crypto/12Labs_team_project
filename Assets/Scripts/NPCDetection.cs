@@ -9,7 +9,6 @@ public class NPCDetection : MonoBehaviour
 
     private PlayerStealth stealthScript;
     private Rigidbody2D rb;
-
     private bool chasing = false;
 
     void Start()
@@ -22,12 +21,14 @@ public class NPCDetection : MonoBehaviour
     {
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // Если игрок НЕ в стелсе
-        if (!stealthScript.IsStealth())
+        // Если игрок НЕ в стелсе и находится в радиусе видимости
+        if (!stealthScript.IsStealth() && distance <= detectionRange)
         {
-            if (distance <= detectionRange)
+            if (!chasing) // Если только что заметили
             {
                 chasing = true;
+                // Теперь надпись ОБНАРУЖЕН появится, так как нас увидел NPC
+                stealthScript.EndStealth(true);
             }
         }
     }
@@ -37,10 +38,7 @@ public class NPCDetection : MonoBehaviour
         if (chasing)
         {
             Vector2 direction = (player.position - transform.position).normalized;
-
-            rb.MovePosition(
-                rb.position + direction * moveSpeed * Time.fixedDeltaTime
-            );
+            rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
         }
     }
 
@@ -48,16 +46,8 @@ public class NPCDetection : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (stealthScript.IsStealth())
-            {
-                stealthScript.EndStealth(true);
-
-                chasing = true;
-            }
-            else
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
+            // Если NPC коснулся игрока — это проигрыш
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

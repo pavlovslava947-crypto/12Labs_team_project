@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 510209894591388946}
   - component: {fileID: 5613751674507777123}
   - component: {fileID: 1366119459900967912}
+  - component: {fileID: 8638980969852424}
   m_Layer: 0
   m_Name: NPCprototype
   m_TagString: Untagged
@@ -182,3 +183,19 @@ MonoBehaviour:
   player: {fileID: 0}
   detectionRange: 5
   moveSpeed: 2
+--- !u!114 &8638980969852424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6943988373442487137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbfda3241b42a55499f461da33a63444, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OldLadyHealth
+  health: 3
+  spriteRenderer: {fileID: 0}
+  flashDuration: 0.1
+  flashCount: 4
