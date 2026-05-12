@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
 
     // Ссылка на компонент Animator
     private Animator anim;
+    public AudioClip[] stepSounds;      // Массив для звуков
+    private AudioSource audioSource;    // Ссылка на компонент звука
 
     void Awake()
     {
@@ -18,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Инициализируем аниматор
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -51,6 +54,16 @@ public class PlayerMovement : MonoBehaviour
         else if (moveInput.x < 0)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+        }
+    }
+
+    public void PlayStepSound()
+    {
+        if (stepSounds.Length > 0 && audioSource != null)
+        {
+            // Выбираем случайный звук из массива
+            int index = Random.Range(0, stepSounds.Length);
+            audioSource.PlayOneShot(stepSounds[index]);
         }
     }
 
