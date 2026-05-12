@@ -12,6 +12,7 @@ public class OldLadyHealth : MonoBehaviour
 
     public void TakeDamage()
     {
+        Debug.Log("Бабушка получила урон! Текущее HP: " + health);
         if (isInvulnerable) return;
 
         health--;

@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: f3f0508f0157cef4ea9dc9eba90cf41c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2093851040937874891
+    second: Raskolnikovnobg_0
+  - first:
+      213: -5743995436803729281
+    second: Raskolnikovnobg_1
+  - first:
+      213: 440528325400999087
+    second: Raskolnikovnobg_2
+  - first:
+      213: -1601676320142487993
+    second: Raskolnikovnobg_3
+  - first:
+      213: -8084220643997835510
+    second: Raskolnikovnobg_4
+  - first:
+      213: -7287382207646969053
+    second: Raskolnikovnobg_5
+  - first:
+      213: 7664795136685236805
+    second: Raskolnikovnobg_6
+  - first:
+      213: 4500320447424520899
+    second: Raskolnikovnobg_7
+  - first:
+      213: 8570793273323582358
+    second: Raskolnikovnobg_8
+  - first:
+      213: 195158651808165721
+    second: Raskolnikovnobg_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Raskolnikovnobg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 10
+        height: 696
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ae05c629521f2e0800000000000000
+      internalID: -2093851040937874891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raskolnikovnobg_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 348
+        width: 184
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7859dd459a3940b0800000000000000
+      internalID: -5743995436803729281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raskolnikovnobg_2
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 348
+        width: 161
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4360d8d221d1600800000000000000
+      internalID: 440528325400999087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raskolnikovnobg_3
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 348
+        width: 195
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e80c47fd3b5c9e0800000000000000
+      internalID: -1601676320142487993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raskolnikovnobg_4
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 353
+        width: 171
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0f11a408241fcf80800000000000000
+      internalID: -8084220643997835510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raskolnikovnobg_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 9
+        width: 174
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32353ba0e740eda90800000000000000
+      internalID: -7287382207646969053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raskolnikovnobg_6
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 1
+        width: 179
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542e3462192de5a60800000000000000
+      internalID: 7664795136685236805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raskolnikovnobg_7
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 9
+        width: 179
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c26a2c6a99547e30800000000000000
+      internalID: 4500320447424520899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raskolnikovnobg_8
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1
+        width: 178
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69372c3721391f670800000000000000
+      internalID: 8570793273323582358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Raskolnikovnobg_9
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 26
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95faed382c755b200800000000000000
+      internalID: 195158651808165721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Raskolnikovnobg_0: -2093851040937874891
+      Raskolnikovnobg_1: -5743995436803729281
+      Raskolnikovnobg_2: 440528325400999087
+      Raskolnikovnobg_3: -1601676320142487993
+      Raskolnikovnobg_4: -8084220643997835510
+      Raskolnikovnobg_5: -7287382207646969053
+      Raskolnikovnobg_6: 7664795136685236805
+      Raskolnikovnobg_7: 4500320447424520899
+      Raskolnikovnobg_8: 8570793273323582358
+      Raskolnikovnobg_9: 195158651808165721
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

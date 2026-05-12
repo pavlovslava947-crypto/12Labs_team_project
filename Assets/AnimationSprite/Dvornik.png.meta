@@ -1,0 +1,239 @@
+fileFormatVersion: 2
+guid: 462edbc306e426145b267bf1bf77fb9f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2399887668133837062
+    second: Dvornik_0
+  - first:
+      213: -4363680149247673687
+    second: Dvornik_1
+  - first:
+      213: -4607693952253016060
+    second: Dvornik_2
+  - first:
+      213: -5142475663145146034
+    second: Dvornik_3
+  - first:
+      213: -8206011378449670618
+    second: Dvornik_4
+  - first:
+      213: -2335189970956641733
+    second: Dvornik_5
+  - first:
+      213: 499880194229383491
+    second: Dvornik_6
+  - first:
+      213: 4513137414137185740
+    second: Dvornik_7
+  - first:
+      213: -5293884611675927443
+    second: Dvornik_8
+  - first:
+      213: 3604359134788582959
+    second: Dvornik_9
+  - first:
+      213: -1171627319900284811
+    second: Dvornik_10
+  - first:
+      213: -2859042097357575956
+    second: Dvornik_11
+  - first:
+      213: -1567014204175356356
+    second: Dvornik_12
+  - first:
+      213: 92261051471812036
+    second: Dvornik_13
+  - first:
+      213: -5714249804070371819
+    second: Dvornik_14
+  - first:
+      213: -6921244814580319762
+    second: Dvornik_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 110
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dvornik_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 20
+        width: 193
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60935f77e1d1e4120800000000000000
+      internalID: 2399887668133837062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dvornik_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 18
+        width: 152
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa3ba626081173c0800000000000000
+      internalID: -4363680149247673687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dvornik_5
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 345
+        width: 114
+        height: 293
+      alignment: 9
+      pivot: {x: 0.50000036, y: 0.4315142}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a1312081db79fd0800000000000000
+      internalID: -2335189970956641733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: aa41195880597a94cbb24a378c5d24cc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":190.0,"y":350.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Dvornik_0: 2399887668133837062
+      Dvornik_1: -4363680149247673687
+      Dvornik_2: -4607693952253016060
+      Dvornik_3: -5142475663145146034
+      Dvornik_4: -8206011378449670618
+      Dvornik_5: -2335189970956641733
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

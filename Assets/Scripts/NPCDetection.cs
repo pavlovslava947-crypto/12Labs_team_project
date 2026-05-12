@@ -9,27 +9,61 @@ public class NPCDetection : MonoBehaviour
 
     private PlayerStealth stealthScript;
     private Rigidbody2D rb;
+    private Animator anim; // Ссылка на аниматор
     private bool chasing = false;
 
     void Start()
     {
         stealthScript = player.GetComponent<PlayerStealth>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>(); // Инициализируем аниматор
+
+        // Убедимся, что Rigidbody настроен правильно для 2D
+        rb.gravityScale = 0f;
+        rb.freezeRotation = true;
     }
 
     void Update()
     {
         float distance = Vector2.Distance(transform.position, player.position);
 
-        // Если игрок НЕ в стелсе и находится в радиусе видимости
+        // Логика обнаружения
         if (!stealthScript.IsStealth() && distance <= detectionRange)
         {
-            if (!chasing) // Если только что заметили
+            if (!chasing)
             {
                 chasing = true;
-                // Теперь надпись ОБНАРУЖЕН появится, так как нас увидел NPC
                 stealthScript.EndStealth(true);
             }
+        }
+
+        // --- ЛОГИКА АНИМАЦИИ И РАЗВОРОТА ---
+        UpdateAnimationAndFlip();
+    }
+
+    void UpdateAnimationAndFlip()
+    {
+        if (anim == null) return;
+
+        if (chasing)
+        {
+            // Если гонимся — передаем скорость 1 (включает Walk)
+            anim.SetFloat("Speed", 1f);
+
+            // Разворот в сторону игрока
+            if (player.position.x > transform.position.x)
+            {
+                transform.localScale = new Vector3(1, 1, 1); // Смотрит вправо
+            }
+            else if (player.position.x < transform.position.x)
+            {
+                transform.localScale = new Vector3(-1, 1, 1); // Смотрит влево
+            }
+        }
+        else
+        {
+            // Если стоим на месте — скорость 0 (включает Idle)
+            anim.SetFloat("Speed", 0f);
         }
     }
 
@@ -46,7 +80,6 @@ public class NPCDetection : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Если NPC коснулся игрока — это проигрыш
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
