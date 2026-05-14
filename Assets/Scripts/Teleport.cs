@@ -37,7 +37,16 @@ public class TeleportPlayer : MonoBehaviour
         yield return StartCoroutine(Fade(0, 1));
 
         // Телепорт
-        player.position = teleportTarget.position;
+        if (teleportTarget != null)
+        {
+            Debug.Log($"Телепортирую в объект: {teleportTarget.name} по координатам: {teleportTarget.position}");
+            player.position = teleportTarget.position;
+        }
+        else
+        {
+            Debug.LogError("ОШИБКА: teleportTarget не назначен!");
+        }
+
 
         // Небольшая пауза
         yield return new WaitForSeconds(0.2f);
