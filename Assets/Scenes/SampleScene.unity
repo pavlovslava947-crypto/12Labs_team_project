@@ -7623,8 +7623,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041E\u0411\u041D\u0410\u0420\u0423\u0416\u0415\u041D!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9569322d09131394e8a64f5140938630, type: 2}
+  m_sharedMaterial: {fileID: 4928804555905729497, guid: 9569322d09131394e8a64f5140938630, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20242,6 +20242,18 @@ PrefabInstance:
       propertyPath: 'stepSounds.Array.data[0]'
       value: 
       objectReference: {fileID: 8300000, guid: dbc751628d16ccb4fb22314246846596, type: 3}
+    - target: {fileID: 7624711730774182145, guid: ee4b00a68ca992c4082cd342d37abd65, type: 3}
+      propertyPath: hitSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0df3fe91935ba1b4d9f6f9a9af289644, type: 3}
+    - target: {fileID: 7624711730774182145, guid: ee4b00a68ca992c4082cd342d37abd65, type: 3}
+      propertyPath: swingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e02b8a0abf56d2c4586bd566e21df17e, type: 3}
+    - target: {fileID: 7624711730774182145, guid: ee4b00a68ca992c4082cd342d37abd65, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1431345499}
     - target: {fileID: 8406729739355985226, guid: ee4b00a68ca992c4082cd342d37abd65, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.08
