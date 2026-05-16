@@ -9,16 +9,15 @@ public class NPCDetection : MonoBehaviour
 
     private PlayerStealth stealthScript;
     private Rigidbody2D rb;
-    private Animator anim; // Ссылка на аниматор
+    private Animator anim;
     private bool chasing = false;
 
     void Start()
     {
         stealthScript = player.GetComponent<PlayerStealth>();
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>(); // Инициализируем аниматор
+        anim = GetComponent<Animator>();
 
-        // Убедимся, что Rigidbody настроен правильно для 2D
         rb.gravityScale = 0f;
         rb.freezeRotation = true;
     }
@@ -37,7 +36,6 @@ public class NPCDetection : MonoBehaviour
             }
         }
 
-        // --- ЛОГИКА АНИМАЦИИ И РАЗВОРОТА ---
         UpdateAnimationAndFlip();
     }
 
@@ -47,22 +45,19 @@ public class NPCDetection : MonoBehaviour
 
         if (chasing)
         {
-            // Если гонимся — передаем скорость 1 (включает Walk)
             anim.SetFloat("Speed", 1f);
 
-            // Разворот в сторону игрока
             if (player.position.x > transform.position.x)
             {
-                transform.localScale = new Vector3(1, 1, 1); // Смотрит вправо
+                transform.localScale = new Vector3(1, 1, 1);
             }
             else if (player.position.x < transform.position.x)
             {
-                transform.localScale = new Vector3(-1, 1, 1); // Смотрит влево
+                transform.localScale = new Vector3(-1, 1, 1);
             }
         }
         else
         {
-            // Если стоим на месте — скорость 0 (включает Idle)
             anim.SetFloat("Speed", 0f);
         }
     }
@@ -80,7 +75,35 @@ public class NPCDetection : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            // Ищем компонент здоровья на игроке
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+
+            if (playerHealth != null)
+            {
+                // Наносим 1 единицу урона (можно вынести в public переменную damage)
+                playerHealth.TakeDamage(1);
+
+                // Чтобы NPC не наносил урон каждый кадр при залипании в игрока,
+                // сбрасываем погоню. Ему придется снова заметить игрока.
+                chasing = false;
+            }
+            else
+            {
+                // Если вдруг забыли повесить скрипт PlayerHealth на игрока:
+                Debug.LogWarning("На Игроке не найден скрипт PlayerHealth! Перезагружаю сцену по умолчанию.");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+        }
+    }
+
+
+    // ВОТ ЭТОТ МЕТОД ДОЛЖЕН БЫТЬ СТРОГО ЗДЕСЬ
+    public void OnTeleport()
+    {
+        float distance = Vector2.Distance(transform.position, player.position);
+        if (stealthScript.IsStealth() || distance > detectionRange)
+        {
+            chasing = false;
         }
     }
 }
