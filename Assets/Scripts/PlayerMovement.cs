@@ -71,4 +71,8 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
     }
+    void Start()
+{
+    Time.timeScale = 1f;
+}
 }
